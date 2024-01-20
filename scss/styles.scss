@@ -1,3 +1,31 @@
 @import "./globals";
 @import "./common";
 @import "./variables";
+
+.header {
+    &__navigation {}
+}
+
+.material {
+    &-symbols-outlined {}
+}
+
+.hero {
+    &__social-media {}
+
+    &__main-part {}
+
+    &__scroll-part {}
+}
+
+.tips {
+    &__heading {}
+
+    &__description {}
+}
+
+.footer {
+    &__copyrights {}
+
+    &__item_heading {}
+}
