@@ -15,13 +15,21 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     color: #FFF;
-    // background-color: #0B1D26;
+    background-color: #0B1D26;
     font-size: 18px;
 }
-h1,h2{
+
+h1,
+h2 {
     font-family: 'Playfair Display', serif;
     margin: 0;
 }
-p{
+
+h2 {
+    font-size: 64px;
+    font-weight: 600;
+}
+
+p {
     margin: 0;
 }

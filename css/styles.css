@@ -323,12 +323,19 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   color: #FFF;
+  background-color: #0B1D26;
   font-size: 18px;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: "Playfair Display", serif;
   margin: 0;
+}
+
+h2 {
+  font-size: 64px;
+  font-weight: 600;
 }
 
 p {
@@ -340,8 +347,8 @@ p {
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-position-y: top, top, 768px, 464px;
   background-blend-mode: darken;
-  height: 1500px;
-  margin-bottom: -240px;
+  height: 1600px;
+  margin-bottom: -440px;
 }
 
 .header {
@@ -426,8 +433,103 @@ p {
   left: 35px;
 }
 
+.tips {
+  background: url(../assets/img/gradient-tips.png) no-repeat;
+  background-blend-mode: multiply;
+  position: relative;
+}
+.tips__wrapper {
+  padding: 270px 229px 200px;
+  background-image: url(../assets/img/tips-01.png), url(../assets/img/tips-02.png), url(../assets/img/tips-03.png);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 14% 12%, 55% 45%, 14% 77.5%;
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+}
+.tips__wrapper p {
+  font-weight: 500;
+}
 .tips figure {
   display: flex;
+  gap: 114px;
+  justify-content: center;
+  align-items: center;
+}
+.tips figcaption {
+  min-width: 632px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  padding-left: 150px;
+}
+.tips figcaption span {
+  display: flex;
+  gap: 16px;
+  color: #FBD784;
+}
+.tips__heading {
+  display: flex;
+  gap: 24px;
+  color: #FBD784;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+.tips__description {
+  line-height: 32px;
+}
+
+.footer {
+  padding: 0px 229px 120px;
+}
+.footer p, .footer a {
+  font-weight: 400;
+}
+.footer ul {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__list-1 {
+  display: flex;
+  flex-direction: column;
+}
+.footer__list-1 img {
+  width: 102px;
+}
+.footer__list-1 p {
+  margin: 24px 0 122px 0;
+  max-width: 303px;
+  line-height: 32px;
+  font-weight: 500;
+}
+.footer__list-2 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer__list-2 a {
+  opacity: 0.8;
+  font-weight: 400;
+}
+.footer__list-3 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer__list-3 a {
+  opacity: 0.8;
+  font-weight: 400;
+}
+.footer__copyrights {
+  opacity: 0.5;
+  font-weight: 400;
+}
+.footer__item_heading {
+  font-size: 24px;
+  color: #FBD784;
+  margin-bottom: 24px;
 }
 
 /*# sourceMappingURL=styles.css.map */
