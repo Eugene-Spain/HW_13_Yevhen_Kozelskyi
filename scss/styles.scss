@@ -3,7 +3,7 @@
 @import "./variables";
 
 .background-wrapper {
-    background-image: url(../assets/img/gradient.png), url(../assets/img/back-top.png), url(../assets/img/back-bottom.png), url(../assets/img/back-middle.png);
+    background-image: url(../assets/img/bg/gradient.png), url(../assets/img/bg/back-top.png), url(../assets/img/bg/back-bottom.png), url(../assets/img/bg/back-middle.png);
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-position-y: top, top, 768px, 464px;
     background-blend-mode: darken;
