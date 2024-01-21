@@ -1,3 +1,228 @@
 @import "./globals";
 @import "./common";
 @import "./variables";
+
+.background-wrapper {
+    background-image: url(../assets/img/bg/gradient.png), url(../assets/img/bg/back-top.png), url(../assets/img/bg/back-bottom.png), url(../assets/img/bg/back-middle.png);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position-y: top, top, 768px, 464px;
+    background-blend-mode: darken;
+    height: 1600px;
+    margin-bottom: -440px;
+}
+
+.header {
+    width: $main-width;
+    margin: 0 auto;
+
+
+    &__navigation {
+        margin: 0 80px 191px;
+        padding-top: 58px;
+        text-align: center;
+
+        &_list {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &_item-middle {
+            display: flex;
+            gap: 40px;
+        }
+    }
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 80px 840px;
+
+    &__social-media {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 54px;
+        margin-top: 54px;
+
+        p {
+            transform: rotate(90deg);
+        }
+
+        span {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+    }
+
+    &__main-part {
+        max-width: 957px;
+
+        &_heading-description {
+            color: #FBD784;
+            font-weight: 800;
+            line-height: normal;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            display: flex;
+            gap: 32px;
+
+        }
+
+        h1 {
+            font-size: 88px;
+            font-weight: 600;
+            line-height: 100px;
+            text-transform: capitalize;
+            margin: 32px 0 32px 0;
+        }
+
+        span {
+            display: flex;
+            gap: 16px;
+        }
+    }
+
+    &__scroll-part {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            gap: 40px;
+            border-right: 3px solid rgba(255, 255, 255, 0.3);
+            padding-right: 32px;
+
+            li:first-child {
+                border-right: 3px solid #fff;
+                position: relative;
+                padding-right: 32px;
+                left: 35px;
+            }
+        }
+    }
+}
+
+.tips {
+    background: url(../assets/img/gradient-tips.png) no-repeat;
+
+    background-blend-mode: multiply;
+    position: relative;
+
+
+    &__wrapper {
+        padding: 270px 229px 200px;
+        background-image: url(../assets/img/tips-01.png), url(../assets/img/tips-02.png), url(../assets/img/tips-03.png);
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-position: 14% 12%, 55% 45%, 14% 77.5%;
+        display: flex;
+        flex-direction: column;
+        gap: 200px;
+
+        p {
+            font-weight: 500;
+        }
+    }
+
+    figure {
+        display: flex;
+        gap: 114px;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    figcaption {
+        min-width: 632px;
+        display: flex;
+        flex-direction: column;
+        gap: 27px;
+        padding-left: 150px;
+
+        span {
+            display: flex;
+            gap: 16px;
+            color: #FBD784;
+        }
+    }
+
+    &__heading {
+        display: flex;
+        gap: 24px;
+        color: #FBD784;
+        font-size: 18px;
+        font-weight: 800;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+    }
+
+    &__description {
+        line-height: 32px;
+    }
+}
+
+.footer {
+    padding: 0px 229px 120px;
+    p,a{
+        font-weight: 400;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__list-1{
+        display: flex;
+        flex-direction: column;
+        img{
+            width: 102px;
+        }
+        p{
+            margin: 24px 0 122px 0;
+            max-width: 303px;
+            line-height: 32px;
+            font-weight: 500;
+        }
+    }
+
+    &__list-2{
+        ul {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        }
+        a{
+            opacity: 0.8;
+            font-weight: 400;
+        }
+    }
+
+    &__list-3{
+        ul{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        }
+        a{
+            opacity: 0.8;
+            font-weight: 400;
+        }
+    }
+
+    &__copyrights {
+        opacity: 0.5;
+        font-weight: 400;
+    }
+
+    &__item_heading {
+        font-size: 24px;
+        color: #FBD784;
+        margin-bottom: 24px;
+    }
+}
