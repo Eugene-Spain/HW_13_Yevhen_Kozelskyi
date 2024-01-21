@@ -2,24 +2,120 @@
 @import "./common";
 @import "./variables";
 
-.header {
-    &__navigation {}
+.background-wrapper {
+    background-image: url(../assets/img/gradient.png), url(../assets/img/back-top.png), url(../assets/img/back-bottom.png), url(../assets/img/back-middle.png);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position-y: top, top, 768px, 464px;
+    background-blend-mode: darken;
+    height: 1500px;
+    margin-bottom: -240px;
 }
 
-.material {
-    &-symbols-outlined {}
+.header {
+    width: $main-width;
+    margin: 0 auto;
+
+
+    &__navigation {
+        margin: 0 80px 191px;
+        padding-top: 58px;
+        text-align: center;
+
+        &_list {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &_item-middle {
+            display: flex;
+            gap: 40px;
+        }
+    }
 }
 
 .hero {
-    &__social-media {}
+    display: flex;
+    justify-content: space-between;
+    margin: 0 80px 840px;
 
-    &__main-part {}
+    &__social-media {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 54px;
+        margin-top: 54px;
 
-    &__scroll-part {}
+        p {
+            transform: rotate(90deg);
+        }
+
+        span {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+    }
+
+    &__main-part {
+        max-width: 957px;
+
+        &_heading-description {
+            color: #FBD784;
+            font-weight: 800;
+            line-height: normal;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            display: flex;
+            gap: 32px;
+
+        }
+
+        h1 {
+            font-size: 88px;
+            font-weight: 600;
+            line-height: 100px;
+            text-transform: capitalize;
+            margin: 32px 0 32px 0;
+        }
+
+        span {
+            display: flex;
+            gap: 16px;
+        }
+    }
+
+    &__scroll-part {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            gap: 40px;
+            border-right: 3px solid rgba(255,255,255,0.3);
+            padding-right: 32px;
+
+            li:first-child{
+                border-right: 3px solid #fff;
+                position: relative;
+                padding-right: 32px;
+                left: 35px;                
+            }
+        }
+    }
 }
 
 .tips {
-    &__heading {}
+
+    figure{
+        display: flex;
+        
+    }
+    &__heading {
+
+    }
 
     &__description {}
 }

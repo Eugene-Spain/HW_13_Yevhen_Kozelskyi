@@ -1,5 +1,7 @@
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -7,13 +9,19 @@ a {
     color: #FFF;
 }
 
+
 body {
     margin: 0;
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     color: #FFF;
-    background-color: #0B1D26;
+    // background-color: #0B1D26;
     font-size: 18px;
-    line-height: 32px;
 }
-
+h1,h2{
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+}
+p{
+    margin: 0;
+}
